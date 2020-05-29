@@ -1,15 +1,16 @@
 
 function input
 {
-  echo $(date)
+  echo "How many files are there in this directory?"
 }
+input
 
 filenum=(*)
 filenum=${#filenum[@]}
 
 while [[ $filenum -ne $n ]]
 do
-    echo "How many files are there in this directory? "
+   # echo "How many files are there in this directory? "
     read n
   if [[ $filenum -eq $n ]]
   then
